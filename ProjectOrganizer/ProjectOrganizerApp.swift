@@ -10,18 +10,18 @@ import SwiftUI
 @main
 struct ProjectOrganizerApp: App {
     
-    @StateObject var dataContoller: DataController
+    @StateObject var dataController: DataController
     
     init() {
         let dataController = DataController()
-        _dataContoller = StateObject(wrappedValue: dataController)
+        _dataController = StateObject(wrappedValue: dataController)
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, dataContoller.container.viewContext)
-                .environmentObject(dataContoller)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environmentObject(dataController)
         }
     }
 }

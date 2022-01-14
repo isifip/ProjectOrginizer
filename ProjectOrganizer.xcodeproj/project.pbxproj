@@ -13,6 +13,8 @@
 		C700F9872791D1CD00534E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C700F9862791D1CD00534E4A /* Preview Assets.xcassets */; };
 		C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDCD2791D4FD00DA48AB /* Main.xcdatamodeld */; };
 		C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD12791D9E800DA48AB /* DataController.swift */; };
+		C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD32791F18C00DA48AB /* HomeView.swift */; };
+		C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C700F9862791D1CD00534E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7ABEDCE2791D4FD00DA48AB /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		C7ABEDD12791D9E800DA48AB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C7ABEDD32791F18C00DA48AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
+				C7ABEDD32791F18C00DA48AB /* HomeView.swift */,
+				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,9 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */,
 				C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */,
 				C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */,
 				C700F9822791D1CC00534E4A /* ContentView.swift in Sources */,
+				C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
