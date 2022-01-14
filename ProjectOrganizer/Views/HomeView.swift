@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     
+    // tag for Tabview
+    static let tag: String? = "Home"
+    
     @EnvironmentObject var dataController: DataController
     
     var body: some View {

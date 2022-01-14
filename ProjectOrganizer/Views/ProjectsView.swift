@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct ProjectsView: View {
+    //tags for TabView
+    static let openTag: String? = "Open"
+    static let closedTag: String? = "Closed"
     
+    //MARK: --> Properties
     let showClosedProjects: Bool
-    
     let projects: FetchRequest<Project>
     
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
-        
         projects = FetchRequest<Project>(
             entity: Project.entity(),
             sortDescriptors: [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)],
             predicate: NSPredicate(format: "closed = %d", showClosedProjects)
         )
     }
-    
+    //MARK: --> Body
     var body: some View {
         NavigationView {
             List {
@@ -33,18 +35,19 @@ struct ProjectsView: View {
                         }
                     } header: {
                         Text(project.projectTitle)
+                            .font(.subheadline).fontWeight(.semibold)
+                            .foregroundColor(.secondary)
                     }
                 }
             }
+            .listStyle(.grouped)
             .navigationBarTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
         }
     }
 }
-
+//MARK: --> Preview
 struct ProjectsView_Previews: PreviewProvider {
-    
     static var dataController = DataController.preview
-    
     static var previews: some View {
         ProjectsView(showClosedProjects: false)
             .environment(\.managedObjectContext, dataController.container.viewContext)

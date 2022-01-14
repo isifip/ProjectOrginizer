@@ -96,6 +96,7 @@
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C7ABEDD32791F18C00DA48AB /* HomeView.swift */,
 				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
+				C7ABEDDC279210EB00DA48AB /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +116,13 @@
 				C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C7ABEDDC279210EB00DA48AB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
