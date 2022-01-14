@@ -15,6 +15,8 @@
 		C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD12791D9E800DA48AB /* DataController.swift */; };
 		C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD32791F18C00DA48AB /* HomeView.swift */; };
 		C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */; };
+		C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */; };
+		C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		C7ABEDD12791D9E800DA48AB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C7ABEDD32791F18C00DA48AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				C700F97F2791D1CC00534E4A /* ProjectOrganizerApp.swift */,
 				C7ABEDCC2791D4EE00DA48AB /* Views */,
 				C7ABEDD02791D9D600DA48AB /* ViewModel */,
+				C7ABEDD72791FE8900DA48AB /* Helpers */,
 				C7ABEDCB2791D4E000DA48AB /* MainData */,
 				C700F9832791D1CD00534E4A /* Assets.xcassets */,
 				C700F9852791D1CD00534E4A /* Preview Content */,
@@ -101,6 +106,15 @@
 				C7ABEDD12791D9E800DA48AB /* DataController.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7ABEDD72791FE8900DA48AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */,
+				C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +189,12 @@
 			files = (
 				C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */,
 				C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */,
+				C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */,
 				C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */,
 				C700F9822791D1CC00534E4A /* ContentView.swift in Sources */,
 				C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
+				C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
