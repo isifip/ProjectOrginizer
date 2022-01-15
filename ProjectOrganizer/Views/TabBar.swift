@@ -9,20 +9,22 @@ import SwiftUI
 
 struct TabBar: View {
     
-    @State var selectedTab: Tab = .home
-    @State var color: Color = .teal
+    @SceneStorage("selectedView") var selectedTab: Tab = .home
+    @State var color: Color = .blue
     @State var tabItemWidth: CGFloat = 0
+    
+    @EnvironmentObject var dataController: DataController
     
     var body: some View {
         ZStack(alignment: .bottom) {
             Group {
                 switch selectedTab {
                 case .home:
-                    Color.white.ignoresSafeArea()
+                    HomeView(dataController: _dataController)
                 case .open:
-                    Color.blue.ignoresSafeArea()
+                    ProjectsView(showClosedProjects: false)
                 case .closed:
-                    Color.green.ignoresSafeArea()
+                    ProjectsView(showClosedProjects: true)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -32,14 +34,14 @@ struct TabBar: View {
             .padding(.horizontal, 8)
             .padding(.top, 14)
             .frame(height: 88, alignment: .top)
-            .background(.white, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
+            .background(Color("TabBackground"), in: RoundedRectangle(cornerRadius: 34, style: .continuous))
             .overlay(
                 overlay
             )
             .strokeStyle(cornerRadius: 34)
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea(edges: .bottom)
-            .shadow(radius: 20)
+            .shadow(color: Color("TabForeground").opacity(0.2),radius: 20)
         }
     }
     
@@ -62,7 +64,7 @@ struct TabBar: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            .foregroundStyle(selectedTab == item.tab ? item.color : .secondary)
+            .foregroundStyle(selectedTab == item.tab ? item.color : Color("TabForeground").opacity(0.7))
             //.blendMode(selectedTab == item.tab ? .overlay : .normal)
             .overlay(
                 GeometryReader { proxy in
@@ -102,12 +104,12 @@ struct TabBar: View {
 
 struct TabBar_Previews: PreviewProvider {
     
-    //static var dataController = DataController.preview
+    static var dataController = DataController.preview
     
     static var previews: some View {
         TabBar()
-        //.environment(\.managedObjectContext, dataController.container.viewContext)
-        //.environmentObject(dataController)
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .environmentObject(dataController)
             .preferredColorScheme(.light)
     }
 }

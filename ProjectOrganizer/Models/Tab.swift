@@ -17,9 +17,9 @@ struct TabItem: Identifiable {
 }
 
 var tabItems = [
-    TabItem(text: "Home", icon: "house", tab: .home, color: .teal),
+    TabItem(text: "Home", icon: "house", tab: .home, color: .blue),
     TabItem(text: "Open", icon: "list.bullet", tab: .open, color: .blue),
-    TabItem(text: "Closed", icon: "checkmark", tab: .closed, color: .red),
+    TabItem(text: "Closed", icon: "checkmark", tab: .closed, color: .blue),
 ]
 
 enum Tab: String {

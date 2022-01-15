@@ -31,12 +31,13 @@ struct ListViewComponents: View {
     
     @State private var animate = false
     var title = ""
+    var item: Item
     
     var body: some View {
         HStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 6, style: .continuous)
-                    .stroke(.secondary, lineWidth: 2)
+                    .stroke(Color("TabForeground"), lineWidth: 2)
                     .frame(width: 16, height: 16)
                     .foregroundColor(.black)
                     .shadow(radius: 10)
@@ -47,13 +48,14 @@ struct ListViewComponents: View {
                     .scaleEffect(animate ? 1.0 : 0)
                     .animation(.spring(), value: animate)
                     .onTapGesture {
+                        item.completed.toggle()
                         animate.toggle()
                     }
             }
             //.padding(.leading, 2)
             VStack(alignment: .leading) {
                 ZStack(alignment: .leading) {
-                    Text(title)
+                    Text(item.itemTitle)
                         .overlay {
                             LineSegment(endPoint: CGPoint(
                                 x: animate ? 1.0 : 0, y: 0))
@@ -61,7 +63,6 @@ struct ListViewComponents: View {
                                 .frame(height: 1)
                                 .animation(.easeInOut(duration: 0.4), value: animate)
                         }
-                        //.font(.subheadline)
                 }
             }
             .padding(.leading, 5)
@@ -76,7 +77,7 @@ struct ListViewComponents: View {
 
 struct ListViewComponents_Previews: PreviewProvider {
     static var previews: some View {
-        ListViewComponents()
+        ListViewComponents(item: Item.example)
             .padding()
     }
 }

@@ -13,7 +13,7 @@ struct ItemRowView: View {
     
     var body: some View {
         NavigationLink(destination: EditItemView(item: item)) {
-            ListViewComponents(title: item.itemTitle)
+            ListViewComponents(item: item)
         }
     }
 }
