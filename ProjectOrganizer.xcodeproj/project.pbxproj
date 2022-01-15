@@ -17,6 +17,7 @@
 		C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */; };
 		C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */; };
 		C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */; };
+		C7ABEDE4279212B500DA48AB /* ListViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		C7ABEDCC2791D4EE00DA48AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7ABEDE52792142300DA48AB /* TestViews */,
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C7ABEDD32791F18C00DA48AB /* HomeView.swift */,
 				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
@@ -121,8 +124,16 @@
 		C7ABEDDC279210EB00DA48AB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C7ABEDE52792142300DA48AB /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */,
 				C700F9822791D1CC00534E4A /* ContentView.swift in Sources */,
 				C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */,
+				C7ABEDE4279212B500DA48AB /* ListViewComponents.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
 				C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */,
 			);
