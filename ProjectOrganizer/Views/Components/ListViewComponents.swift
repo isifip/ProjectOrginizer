@@ -50,7 +50,7 @@ struct ListViewComponents: View {
                         animate.toggle()
                     }
             }
-            .padding(.leading, 2)
+            //.padding(.leading, 2)
             VStack(alignment: .leading) {
                 ZStack(alignment: .leading) {
                     Text(title)
@@ -67,7 +67,7 @@ struct ListViewComponents: View {
             .padding(.leading, 5)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        //.padding(10)
+        .padding(2)
         //.background(.ultraThinMaterial)
         .cornerRadius(8)
         //.padding([.horizontal])
@@ -77,6 +77,7 @@ struct ListViewComponents: View {
 struct ListViewComponents_Previews: PreviewProvider {
     static var previews: some View {
         ListViewComponents()
+            .padding()
     }
 }
 
