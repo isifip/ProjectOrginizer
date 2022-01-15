@@ -41,7 +41,7 @@ struct TabBar: View {
             .strokeStyle(cornerRadius: 34)
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea(edges: .bottom)
-            .shadow(color: Color("TabForeground").opacity(0.2),radius: 20)
+            //.shadow(color: Color("TabForeground").opacity(0.2),radius: 20)
         }
     }
     
