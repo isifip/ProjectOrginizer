@@ -14,6 +14,8 @@
 		C74962962792F70C0062935C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74962952792F70C0062935C /* TabBar.swift */; };
 		C74962982792F7960062935C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74962972792F7960062935C /* Style.swift */; };
 		C749629A2792F7B10062935C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74962992792F7B10062935C /* Tab.swift */; };
+		C78A58C82794946E00367E26 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A58C72794946E00367E26 /* ProjectHeaderView.swift */; };
+		C78A58CA2794A5D000367E26 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78A58C92794A5D000367E26 /* Colors.xcassets */; };
 		C79F790627931AE500124852 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F790527931AE500124852 /* EditItemView.swift */; };
 		C79F7908279327C600124852 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7907279327C600124852 /* ItemRowView.swift */; };
 		C79F790B27932A7600124852 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F790A27932A7600124852 /* Binding-OnChange.swift */; };
@@ -35,6 +37,8 @@
 		C74962952792F70C0062935C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C74962972792F7960062935C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		C74962992792F7B10062935C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		C78A58C72794946E00367E26 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		C78A58C92794A5D000367E26 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C79F790527931AE500124852 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		C79F7907279327C600124852 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		C79F790A27932A7600124852 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				C79F790927932A6200124852 /* Extensions */,
 				C7ABEDCB2791D4E000DA48AB /* MainData */,
 				C700F9832791D1CD00534E4A /* Assets.xcassets */,
+				C78A58C92794A5D000367E26 /* Colors.xcassets */,
 				C700F9852791D1CD00534E4A /* Preview Content */,
 			);
 			path = ProjectOrganizer;
@@ -131,6 +136,7 @@
 				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
 				C7ABEDDC279210EB00DA48AB /* Components */,
 				C79F790527931AE500124852 /* EditItemView.swift */,
+				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
 				C79F7907279327C600124852 /* ItemRowView.swift */,
 			);
 			path = Views;
@@ -220,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78A58CA2794A5D000367E26 /* Colors.xcassets in Resources */,
 				C700F9872791D1CD00534E4A /* Preview Assets.xcassets in Resources */,
 				C700F9842791D1CD00534E4A /* Assets.xcassets in Resources */,
 			);
@@ -245,6 +252,7 @@
 				C79F790B27932A7600124852 /* Binding-OnChange.swift in Sources */,
 				C79F790627931AE500124852 /* EditItemView.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
+				C78A58C82794946E00367E26 /* ProjectHeaderView.swift in Sources */,
 				C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */,
 				C74962982792F7960062935C /* Style.swift in Sources */,
 			);

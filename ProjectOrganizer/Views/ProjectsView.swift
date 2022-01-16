@@ -34,13 +34,13 @@ struct ProjectsView: View {
                             ItemRowView(item: item)
                         }
                     } header: {
-                        Text(project.projectTitle)
-                            .font(.subheadline).fontWeight(.semibold)
-                            .foregroundColor(.secondary)
+                        ProjectHeaderView(project: project)
+//                        Text(project.projectTitle)
+//                            .font(.subheadline).fontWeight(.semibold)
+//                            .foregroundColor(.secondary)
                     }
                 }
             }
-            .listStyle(.grouped)
             .navigationBarTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
         }
     }
