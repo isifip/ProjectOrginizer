@@ -28,6 +28,7 @@
 		C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */; };
 		C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */; };
 		C7ABEDE4279212B500DA48AB /* ListViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */; };
+		C7ACD54C27959C130072812F /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD54B27959C130072812F /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C7ABEDD82791FEA200DA48AB /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewComponents.swift; sourceTree = "<group>"; };
+		C7ACD54B27959C130072812F /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */,
 				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
 				C79F7907279327C600124852 /* ItemRowView.swift */,
+				C7ACD54B27959C130072812F /* SelectSomethingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7ACD54C27959C130072812F /* SelectSomethingView.swift in Sources */,
 				C79F7908279327C600124852 /* ItemRowView.swift in Sources */,
 				C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */,
 				C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */,
