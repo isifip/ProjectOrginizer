@@ -29,6 +29,7 @@
 		C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */; };
 		C7ABEDE4279212B500DA48AB /* ListViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */; };
 		C7ACD54C27959C130072812F /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD54B27959C130072812F /* SelectSomethingView.swift */; };
+		C7ACD54E2795A0C80072812F /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD54D2795A0C80072812F /* Color-Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		C7ABEDDA2791FF5300DA48AB /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		C7ABEDE3279212B500DA48AB /* ListViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewComponents.swift; sourceTree = "<group>"; };
 		C7ACD54B27959C130072812F /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
+		C7ACD54D2795A0C80072812F /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				C79F790A27932A7600124852 /* Binding-OnChange.swift */,
 				C7A9FBE627958EB800F1E2AA /* Sequence-Sorting.swift */,
+				C7ACD54D2795A0C80072812F /* Color-Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				C7A9FBE727958EB800F1E2AA /* Sequence-Sorting.swift in Sources */,
 				C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */,
 				C749629A2792F7B10062935C /* Tab.swift in Sources */,
+				C7ACD54E2795A0C80072812F /* Color-Additions.swift in Sources */,
 				C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */,
 				C700F9822791D1CC00534E4A /* ContentView.swift in Sources */,
 				C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */,
