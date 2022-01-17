@@ -15,6 +15,10 @@ struct ProjectsView: View {
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
     
+    @State private var showingSortOrder = false
+    
+    @State private var sortOrder = Item.SortOrder.optimized
+    
     //MARK: --> Properties
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
@@ -33,7 +37,7 @@ struct ProjectsView: View {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section {
-                        ForEach(project.projectItems) { item in
+                        ForEach(items(for: project)) { item in
                             ItemRowView(item: item)
                         }
                         .onDelete { offsets in
@@ -64,19 +68,43 @@ struct ProjectsView: View {
             }
             .navigationBarTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
-                if showClosedProjects == false {
-                    Button {
-                        withAnimation {
-                            let project = Project(context: managedObjectContext)
-                            project.closed = false
-                            project.creationDate = Date()
-                            dataController.save()
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    if showClosedProjects == false {
+                        Button {
+                            withAnimation {
+                                let project = Project(context: managedObjectContext)
+                                project.closed = false
+                                project.creationDate = Date()
+                                dataController.save()
+                            }
+                        } label: {
+                            Label("Add Project", systemImage: "plus")
                         }
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        showingSortOrder.toggle()
                     } label: {
-                        Label("Add Project", systemImage: "plus")
+                        Label("Sort", systemImage: "arrow.up.arrow.down")
                     }
                 }
             }
+            .confirmationDialog("Sort items", isPresented: $showingSortOrder) {
+                Button("Optimized") { sortOrder = .optimized }
+                Button("Creation Date") { sortOrder = .creationDate }
+                Button("Title") { sortOrder = .title }
+            }
+        }
+    }
+    func items(for project: Project) -> [Item] {
+        switch sortOrder {
+        case .optimized:
+            return project.projectItemsDefaultSorted
+        case .title:
+            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
+        case .creationDate:
+            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
         }
     }
 }

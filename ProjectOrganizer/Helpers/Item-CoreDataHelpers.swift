@@ -8,6 +8,11 @@
 import Foundation
 
 extension Item {
+    
+    enum SortOrder {
+        case optimized, title, creationDate
+    }
+    
     // this helps us to avoid optionals in our code
     var itemTitle: String {
         title ?? "New Item"
@@ -15,7 +20,7 @@ extension Item {
     var itemDetail: String {
         detail ?? ""
     }
-    var itemCreationData: Date {
+    var itemCreationDate: Date {
         creationDate ?? Date()
     }
     
