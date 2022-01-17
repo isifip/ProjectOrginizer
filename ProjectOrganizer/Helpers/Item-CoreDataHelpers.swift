@@ -10,7 +10,7 @@ import Foundation
 extension Item {
     // this helps us to avoid optionals in our code
     var itemTitle: String {
-        title ?? ""
+        title ?? "New Item"
     }
     var itemDetail: String {
         detail ?? ""

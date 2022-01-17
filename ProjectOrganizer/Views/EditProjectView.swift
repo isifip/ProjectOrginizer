@@ -71,8 +71,6 @@ struct EditProjectView: View {
                 } label: {
                     Text("Delete this project")
                 }.tint(.red)
-
-
             } footer: {
                 Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")
             }
