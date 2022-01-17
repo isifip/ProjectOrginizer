@@ -144,12 +144,12 @@
 		C7ABEDCC2791D4EE00DA48AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7ACD54B27959C130072812F /* SelectSomethingView.swift */,
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C74962952792F70C0062935C /* TabBar.swift */,
 				C7ACD54F2795D2E10072812F /* Home */,
 				C7ACD5542795DC320072812F /* Project */,
 				C7ACD5552795DC4B0072812F /* EditViews */,
-				C7ACD54B27959C130072812F /* SelectSomethingView.swift */,
 				C7ABEDDC279210EB00DA48AB /* Components */,
 			);
 			path = Views;
