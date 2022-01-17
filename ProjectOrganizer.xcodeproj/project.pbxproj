@@ -19,6 +19,7 @@
 		C79F790627931AE500124852 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F790527931AE500124852 /* EditItemView.swift */; };
 		C79F7908279327C600124852 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7907279327C600124852 /* ItemRowView.swift */; };
 		C79F790B27932A7600124852 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F790A27932A7600124852 /* Binding-OnChange.swift */; };
+		C7A9FBE52795788B00F1E2AA /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */; };
 		C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDCD2791D4FD00DA48AB /* Main.xcdatamodeld */; };
 		C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD12791D9E800DA48AB /* DataController.swift */; };
 		C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABEDD32791F18C00DA48AB /* HomeView.swift */; };
@@ -42,6 +43,7 @@
 		C79F790527931AE500124852 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		C79F7907279327C600124852 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		C79F790A27932A7600124852 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		C7ABEDCE2791D4FD00DA48AB /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		C7ABEDD12791D9E800DA48AB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C7ABEDD32791F18C00DA48AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -132,10 +134,11 @@
 			children = (
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C74962952792F70C0062935C /* TabBar.swift */,
+				C7ABEDDC279210EB00DA48AB /* Components */,
 				C7ABEDD32791F18C00DA48AB /* HomeView.swift */,
 				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
-				C7ABEDDC279210EB00DA48AB /* Components */,
 				C79F790527931AE500124852 /* EditItemView.swift */,
+				C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */,
 				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
 				C79F7907279327C600124852 /* ItemRowView.swift */,
 			);
@@ -249,6 +252,7 @@
 				C7ABEDD42791F18C00DA48AB /* HomeView.swift in Sources */,
 				C74962962792F70C0062935C /* TabBar.swift in Sources */,
 				C7ABEDE4279212B500DA48AB /* ListViewComponents.swift in Sources */,
+				C7A9FBE52795788B00F1E2AA /* EditProjectView.swift in Sources */,
 				C79F790B27932A7600124852 /* Binding-OnChange.swift in Sources */,
 				C79F790627931AE500124852 /* EditItemView.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
