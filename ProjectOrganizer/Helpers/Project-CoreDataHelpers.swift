@@ -56,7 +56,7 @@ extension Project {
             } else if first.priority < second.priority {
                 return false
             }
-            return first.itemCreationData < second.itemCreationData
+            return first.itemCreationDate < second.itemCreationDate
         }
     }
     
@@ -79,5 +79,16 @@ extension Project {
         project.closed = true
         project.creationDate = Date()
         return project
+    }
+    
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .optimized:
+            return projectItemsDefaultSorted
+        case .title:
+            return projectItems.sorted(by: \Item.itemTitle)
+        case .creationDate:
+            return projectItems.sorted(by: \Item.itemCreationDate)
+        }
     }
 }
