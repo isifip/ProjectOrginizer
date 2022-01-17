@@ -146,14 +146,11 @@
 			children = (
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C74962952792F70C0062935C /* TabBar.swift */,
-				C7ABEDDC279210EB00DA48AB /* Components */,
 				C7ACD54F2795D2E10072812F /* Home */,
-				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
-				C79F790527931AE500124852 /* EditItemView.swift */,
-				C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */,
-				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
-				C79F7907279327C600124852 /* ItemRowView.swift */,
+				C7ACD5542795DC320072812F /* Project */,
+				C7ACD5552795DC4B0072812F /* EditViews */,
 				C7ACD54B27959C130072812F /* SelectSomethingView.swift */,
+				C7ABEDDC279210EB00DA48AB /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +189,25 @@
 				C7ACD5522795D3D70072812F /* ProjectSummaryView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C7ACD5542795DC320072812F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				C7ABEDD52791F1E300DA48AB /* ProjectsView.swift */,
+				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
+				C79F7907279327C600124852 /* ItemRowView.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		C7ACD5552795DC4B0072812F /* EditViews */ = {
+			isa = PBXGroup;
+			children = (
+				C79F790527931AE500124852 /* EditItemView.swift */,
+				C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */,
+			);
+			path = EditViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
