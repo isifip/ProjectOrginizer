@@ -12,6 +12,7 @@ extension Project {
     static let colors = [
         "Pink",
         "Purple",
+        "Red",
         "Orange",
         "Gold",
         "Green",
