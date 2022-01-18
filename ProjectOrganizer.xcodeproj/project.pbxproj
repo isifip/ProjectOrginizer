@@ -36,6 +36,7 @@
 		C7D747E82796CB4D00B2B480 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E72796CB4D00B2B480 /* AssetTest.swift */; };
 		C7D747EA2796CC7700B2B480 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E92796CC7700B2B480 /* ProjectTests.swift */; };
 		C7D747EC2796CFF200B2B480 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */; };
+		C7D747F02796D4EE00B2B480 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		C7D747E72796CB4D00B2B480 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		C7D747E92796CC7700B2B480 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				C7ABEDD12791D9E800DA48AB /* DataController.swift */,
+				C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				C7ACD54C27959C130072812F /* SelectSomethingView.swift in Sources */,
 				C79F7908279327C600124852 /* ItemRowView.swift in Sources */,
 				C7ABEDD62791F1E300DA48AB /* ProjectsView.swift in Sources */,
+				C7D747F02796D4EE00B2B480 /* ProjectsViewModel.swift in Sources */,
 				C7ABEDCF2791D4FD00DA48AB /* Main.xcdatamodeld in Sources */,
 				C7A9FBE727958EB800F1E2AA /* Sequence-Sorting.swift in Sources */,
 				C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */,

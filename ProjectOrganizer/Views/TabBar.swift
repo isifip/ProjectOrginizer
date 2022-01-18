@@ -22,9 +22,9 @@ struct TabBar: View {
                 case .home:
                     HomeView()
                 case .open:
-                    ProjectsView(showClosedProjects: false)
+                    ProjectsView(dataController: dataController, showClosedProjects: false)
                 case .closed:
-                    ProjectsView(showClosedProjects: true)
+                    ProjectsView(dataController: dataController, showClosedProjects: true)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
