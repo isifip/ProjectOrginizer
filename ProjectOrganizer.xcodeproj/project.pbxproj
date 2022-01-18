@@ -34,6 +34,8 @@
 		C7ACD5532795D3D70072812F /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACD5522795D3D70072812F /* ProjectSummaryView.swift */; };
 		C7D747E12796C9BA00B2B480 /* ProjectOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E02796C9BA00B2B480 /* ProjectOrganizerTests.swift */; };
 		C7D747E82796CB4D00B2B480 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E72796CB4D00B2B480 /* AssetTest.swift */; };
+		C7D747EA2796CC7700B2B480 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E92796CC7700B2B480 /* ProjectTests.swift */; };
+		C7D747EC2796CFF200B2B480 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		C7D747DE2796C9BA00B2B480 /* ProjectOrganizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectOrganizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D747E02796C9BA00B2B480 /* ProjectOrganizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOrganizerTests.swift; sourceTree = "<group>"; };
 		C7D747E72796CB4D00B2B480 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
+		C7D747E92796CC7700B2B480 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,8 @@
 			children = (
 				C7D747E02796C9BA00B2B480 /* ProjectOrganizerTests.swift */,
 				C7D747E72796CB4D00B2B480 /* AssetTest.swift */,
+				C7D747E92796CC7700B2B480 /* ProjectTests.swift */,
+				C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */,
 			);
 			path = ProjectOrganizerTests;
 			sourceTree = "<group>";
@@ -375,6 +381,8 @@
 			files = (
 				C7D747E82796CB4D00B2B480 /* AssetTest.swift in Sources */,
 				C7D747E12796C9BA00B2B480 /* ProjectOrganizerTests.swift in Sources */,
+				C7D747EA2796CC7700B2B480 /* ProjectTests.swift in Sources */,
+				C7D747EC2796CFF200B2B480 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
