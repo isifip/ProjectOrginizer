@@ -13,7 +13,7 @@ struct ProjectSummaryView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("\(project.projectItems.count)")
+            Text("\(project.projectItems.count) Items")
                 .font(.caption)
                 .foregroundColor(.secondary)
             Text("\(project.projectTitle)")
