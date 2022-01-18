@@ -37,6 +37,7 @@
 		C7D747EA2796CC7700B2B480 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747E92796CC7700B2B480 /* ProjectTests.swift */; };
 		C7D747EC2796CFF200B2B480 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */; };
 		C7D747F02796D4EE00B2B480 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */; };
+		C7D747F22796DC6800B2B480 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747F12796DC6800B2B480 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		C7D747E92796CC7700B2B480 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		C7D747F12796DC6800B2B480 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			children = (
 				C7ABEDD12791D9E800DA48AB /* DataController.swift */,
 				C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */,
+				C7D747F12796DC6800B2B480 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				C7A9FBE52795788B00F1E2AA /* EditProjectView.swift in Sources */,
 				C79F790B27932A7600124852 /* Binding-OnChange.swift in Sources */,
 				C79F790627931AE500124852 /* EditItemView.swift in Sources */,
+				C7D747F22796DC6800B2B480 /* HomeViewModel.swift in Sources */,
 				C700F9802791D1CC00534E4A /* ProjectOrganizerApp.swift in Sources */,
 				C78A58C82794946E00367E26 /* ProjectHeaderView.swift in Sources */,
 				C7ABEDD92791FEA200DA48AB /* Item-CoreDataHelpers.swift in Sources */,

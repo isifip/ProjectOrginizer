@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedView) {
-            HomeView()
+            HomeView(dataContoller: dataController)
                 .tag(HomeView.tag)
                 .tabItem {
                     Image(systemName: "house")

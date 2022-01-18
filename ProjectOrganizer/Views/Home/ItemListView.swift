@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemListView: View {
     
     let title: String
-    let items: FetchedResults<Item>.SubSequence
+    let items: ArraySlice<Item>
     
     var body: some View {
         if items.isEmpty {

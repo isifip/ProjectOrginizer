@@ -20,7 +20,7 @@ struct TabBar: View {
             Group {
                 switch selectedTab {
                 case .home:
-                    HomeView()
+                    HomeView(dataContoller: dataController)
                 case .open:
                     ProjectsView(dataController: dataController, showClosedProjects: false)
                 case .closed:

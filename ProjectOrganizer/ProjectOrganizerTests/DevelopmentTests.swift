@@ -24,4 +24,14 @@ class DevelopmentTests: BaseTestCase {
         XCTAssertEqual(dataController.count(for: Project.fetchRequest()), 0, "DeleteALL() should leave 0 projects")
         XCTAssertEqual(dataController.count(for: Item.fetchRequest()), 0, "DeleteALL() should leave 0 sample items")
     }
+    
+    func testExampleProjectIsClosed() {
+        let project = Project.example
+        XCTAssertTrue(project.closed, "The example project should closed")
+    }
+    
+    func testExampleItemIsHighPriority() {
+        let item = Item.example
+        XCTAssertEqual(item.priority, 3, "The example item should be high priority")
+    }
 }
