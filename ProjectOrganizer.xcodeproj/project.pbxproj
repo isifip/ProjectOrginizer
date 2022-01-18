@@ -38,6 +38,7 @@
 		C7D747EC2796CFF200B2B480 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */; };
 		C7D747F02796D4EE00B2B480 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */; };
 		C7D747F22796DC6800B2B480 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747F12796DC6800B2B480 /* HomeViewModel.swift */; };
+		C7D747F62796E50500B2B480 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D747F52796E50500B2B480 /* ItemRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		C7D747EB2796CFF200B2B480 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		C7D747F12796DC6800B2B480 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C7D747F52796E50500B2B480 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,6 @@
 				C700F97F2791D1CC00534E4A /* ProjectOrganizerApp.swift */,
 				C7ABEDCC2791D4EE00DA48AB /* Views */,
 				C7ABEDD02791D9D600DA48AB /* ViewModel */,
-				C75D9EA12793692F009148EA /* Models */,
 				C79F790927932A6200124852 /* Extensions */,
 				C7ABEDCB2791D4E000DA48AB /* MainData */,
 				C7D747DF2796C9BA00B2B480 /* ProjectOrganizerTests */,
@@ -144,14 +145,6 @@
 				C700F9862791D1CD00534E4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C75D9EA12793692F009148EA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C74962992792F7B10062935C /* Tab.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		C79F790927932A6200124852 /* Extensions */ = {
@@ -178,9 +171,9 @@
 			children = (
 				C700F9812791D1CC00534E4A /* ContentView.swift */,
 				C74962952792F70C0062935C /* TabBar.swift */,
+				C74962992792F7B10062935C /* Tab.swift */,
 				C7ACD54F2795D2E10072812F /* Home */,
 				C7ACD5542795DC320072812F /* Project */,
-				C7ACD5552795DC4B0072812F /* EditViews */,
 				C7ABEDDC279210EB00DA48AB /* Components */,
 			);
 			path = Views;
@@ -192,6 +185,7 @@
 				C7ABEDD12791D9E800DA48AB /* DataController.swift */,
 				C7D747EF2796D4EE00B2B480 /* ProjectsViewModel.swift */,
 				C7D747F12796DC6800B2B480 /* HomeViewModel.swift */,
+				C7D747F52796E50500B2B480 /* ItemRowViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,17 +225,10 @@
 				C78A58C72794946E00367E26 /* ProjectHeaderView.swift */,
 				C79F7907279327C600124852 /* ItemRowView.swift */,
 				C7ACD54B27959C130072812F /* SelectSomethingView.swift */,
-			);
-			path = Project;
-			sourceTree = "<group>";
-		};
-		C7ACD5552795DC4B0072812F /* EditViews */ = {
-			isa = PBXGroup;
-			children = (
 				C79F790527931AE500124852 /* EditItemView.swift */,
 				C7A9FBE42795788B00F1E2AA /* EditProjectView.swift */,
 			);
-			path = EditViews;
+			path = Project;
 			sourceTree = "<group>";
 		};
 		C7D747DF2796C9BA00B2B480 /* ProjectOrganizerTests */ = {
@@ -365,6 +352,7 @@
 				C7ABEDDB2791FF5300DA48AB /* Project-CoreDataHelpers.swift in Sources */,
 				C749629A2792F7B10062935C /* Tab.swift in Sources */,
 				C7ACD5532795D3D70072812F /* ProjectSummaryView.swift in Sources */,
+				C7D747F62796E50500B2B480 /* ItemRowViewModel.swift in Sources */,
 				C7ACD54E2795A0C80072812F /* Color-Additions.swift in Sources */,
 				C7ABEDD22791D9E800DA48AB /* DataController.swift in Sources */,
 				C700F9822791D1CC00534E4A /* ContentView.swift in Sources */,
