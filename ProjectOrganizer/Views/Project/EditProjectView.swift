@@ -19,6 +19,7 @@ struct EditProjectView: View {
     @State private var color: String
     
     @State private var showingDeleteConfirm = false
+    @State private var showingNotificationsError = false
     
     @State private var remindMe: Bool
     @State private var reminderTime: Date
@@ -58,6 +59,13 @@ struct EditProjectView: View {
             
             Section("Project reminders") {
                 Toggle("Show Reminders", isOn: $remindMe.animation().onChange(update))
+                    .alert(isPresented: $showingNotificationsError) {
+                        Alert(
+                            title: Text("Oops!"),
+                            message: Text("There was a problem, Please check tha you have notifications enabled"),
+                            primaryButton: .default(Text("Check Settings"), action: showAppSettings),
+                            secondaryButton: .cancel())
+                    }
                 if remindMe {
                     DatePicker(
                         "Reminder time",
@@ -99,8 +107,17 @@ struct EditProjectView: View {
         project.color = color
         if remindMe {
             project.reminderTime = reminderTime
+            dataController.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+                    
+                    showingNotificationsError = true
+                }
+            }
         } else {
             project.reminderTime = nil
+            dataController.removeReminders(for: project)
         }
     }
     func delete() {
@@ -121,6 +138,12 @@ struct EditProjectView: View {
         .onTapGesture {
             color = item
             update()
+        }
+    }
+    func showAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL)
         }
     }
 }
