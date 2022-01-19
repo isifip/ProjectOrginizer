@@ -25,7 +25,7 @@ struct ProjectSummaryView: View {
         .padding()
         .background(Color.secondarySystemGroupedBackground)
         .cornerRadius(10)
-        .shadow(color: .black.opacity(0.1), radius: 5)
+        //.shadow(color: .black.opacity(0.1), radius: 5)
     }
 }
 

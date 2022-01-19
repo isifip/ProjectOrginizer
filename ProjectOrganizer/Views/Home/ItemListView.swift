@@ -22,29 +22,39 @@ struct ItemListView: View {
                 .padding(.top)
             ForEach(items) { item in
                 NavigationLink(destination: EditItemView(item: item)) {
-                    HStack(spacing: 20) {
-                        RoundedRectangle(cornerRadius: 8, style: .continuous)
-                            .stroke(Color(item.project?.projectColor ?? "Light Blue"), lineWidth: 3)
-                            .frame(width: 24, height: 24)
-
-                        VStack(alignment: .leading) {
-                            Text(item.itemTitle)
-                                .font(.subheadline)
-                                .foregroundColor(.primary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            if item.itemDetail.isEmpty == false {
-                                Text(item.itemDetail)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                    }
-                    .padding()
-                    .background(Color.secondarySystemGroupedBackground)
-                    .cornerRadius(10)
-                    .shadow(color: Color.black.opacity(0.2), radius: 5)
+                    navigationLinkLabelView(item: item)
                 }
+                Divider()
             }
         }
+    }
+    func navigationLinkLabelView(item: Item) -> some View {
+        HStack {
+            RoundedRectangle(cornerRadius: 6, style: .continuous)
+                .stroke(Color(item.project?.projectColor ?? "Light Blue"), lineWidth: 1.4)
+                .frame(width: 20, height: 20)
+                .foregroundColor(.black)
+                .shadow(radius: 10)
+                .padding(2)
+            
+            VStack(alignment: .leading) {
+                Text(item.itemTitle)
+                    .font(.subheadline)
+                    .foregroundColor(.primary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                if item.itemDetail.isEmpty == false {
+                    Text(item.itemDetail)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .padding(.leading, 8)
+            .multilineTextAlignment(.leading)
+        }
+        //.padding(10)
+        //.background(Color.secondarySystemGroupedBackground)
+        .cornerRadius(10)
+        
     }
 }
 
