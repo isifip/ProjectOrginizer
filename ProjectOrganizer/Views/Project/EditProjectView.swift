@@ -20,6 +20,9 @@ struct EditProjectView: View {
     
     @State private var showingDeleteConfirm = false
     
+    @State private var remindMe: Bool
+    @State private var reminderTime: Date
+    
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
     ]
@@ -30,6 +33,14 @@ struct EditProjectView: View {
         _title = State(wrappedValue: project.projectTitle)
         _detail = State(wrappedValue: project.projectDetail)
         _color = State(wrappedValue: project.projectColor)
+        
+        if let projectReminderTime = project.reminderTime {
+            _reminderTime = State(wrappedValue: projectReminderTime)
+            _remindMe = State(wrappedValue: true)
+        } else {
+            _reminderTime = State(wrappedValue: Date())
+            _remindMe = State(wrappedValue: false)
+        }
     }
     
     var body: some View {
@@ -43,6 +54,17 @@ struct EditProjectView: View {
                     ForEach(Project.colors, id: \.self, content: colorButton)
                 }
                 .padding(.vertical)
+            }
+            
+            Section("Project reminders") {
+                Toggle("Show Reminders", isOn: $remindMe.animation().onChange(update))
+                if remindMe {
+                    DatePicker(
+                        "Reminder time",
+                        selection: $reminderTime.onChange(update),
+                        displayedComponents: .hourAndMinute
+                    )
+                }
             }
             Section {
                 Button {
@@ -59,7 +81,6 @@ struct EditProjectView: View {
             } footer: {
                 Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")
             }
-
         }
         .navigationTitle("Edit Projects")
         .onDisappear(perform: dataController.save)
@@ -70,12 +91,17 @@ struct EditProjectView: View {
                 primaryButton: .default(Text("Delete"), action: delete),
                 secondaryButton: .cancel())
         }
-
     }
+    
     func update() {
         project.title = title
         project.detail = detail
         project.color = color
+        if remindMe {
+            project.reminderTime = reminderTime
+        } else {
+            project.reminderTime = nil
+        }
     }
     func delete() {
         dataController.delete(project)
