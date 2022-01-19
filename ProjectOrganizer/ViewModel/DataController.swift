@@ -6,6 +6,7 @@
 //
 
 import CoreData
+import CoreSpotlight
 import SwiftUI
 
 /// An environment singleton responsible for managing our Core Data stack, including handling saving,
@@ -107,5 +108,34 @@ class DataController: ObservableObject {
     
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
+    }
+    
+    func update(_ item: Item) {
+        let itemID = item.objectID.uriRepresentation().absoluteString
+        let projectID = item.project?.objectID.uriRepresentation().absoluteString
+        
+        let  attributeSet = CSSearchableItemAttributeSet(contentType: .text)
+        attributeSet.title = item.itemTitle
+        attributeSet.contentDescription = item.itemDetail
+        
+        let searchableItem = CSSearchableItem(
+            uniqueIdentifier: itemID,
+            domainIdentifier: projectID,
+            attributeSet: attributeSet
+        )
+        
+        CSSearchableIndex.default().indexSearchableItems([searchableItem])
+        
+        save()
+    }
+    
+    func item(with uniqueIdentifier: String) -> Item? {
+        guard let url = URL(string: uniqueIdentifier) else {
+            return nil
+        }
+        guard let id = container.persistentStoreCoordinator.managedObjectID(forURIRepresentation: url) else {
+            return nil
+        }
+        return try? container.viewContext.existingObject(with: id) as? Item
     }
 }

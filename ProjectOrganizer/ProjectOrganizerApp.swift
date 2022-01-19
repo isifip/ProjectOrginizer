@@ -19,7 +19,7 @@ struct ProjectOrganizerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .onReceive(NotificationCenter.default.publisher(

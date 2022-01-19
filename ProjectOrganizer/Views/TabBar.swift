@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreSpotlight
 
 struct TabBar: View {
     
@@ -43,6 +44,10 @@ struct TabBar: View {
             .ignoresSafeArea(edges: .bottom)
             //.shadow(color: Color("TabForeground").opacity(0.2),radius: 20)
         }
+        .onContinueUserActivity(CSSearchableItemActionType, perform: moveToHome)
+    }
+    func moveToHome(_ input: Any) {
+        selectedTab = .home
     }
     
     var buttons: some View {
