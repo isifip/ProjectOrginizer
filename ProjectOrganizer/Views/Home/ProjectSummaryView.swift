@@ -12,19 +12,20 @@ struct ProjectSummaryView: View {
     @ObservedObject var project: Project
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("\(project.projectItems.count) Items")
-                .font(.caption)
-                .foregroundColor(.secondary)
-            Text("\(project.projectTitle)")
-                .font(.title2).fontWeight(.semibold)
-            ProgressView(value: project.completionAmount)
-                .tint(Color(project.projectColor))
+        HStack {
+            VStack(alignment: .leading) {
+                Text("\(project.projectItems.count) Items")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                Text("\(project.projectTitle)")
+                    .font(.title3).fontWeight(.semibold)
+            }
+            ProgressCircleView(progress: project.completionAmount, color: Color(project.projectColor), widthAndHeight: 70)
         }
         .padding()
         .background(Color.secondarySystemGroupedBackground)
         .cornerRadius(10)
-        .shadow(color: .black.opacity(0.2), radius: 10)
+        .shadow(color: .black.opacity(0.1), radius: 5)
     }
 }
 

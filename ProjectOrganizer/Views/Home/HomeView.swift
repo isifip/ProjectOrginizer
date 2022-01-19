@@ -44,6 +44,7 @@ struct HomeView: View {
                             ForEach(viewModel.projects, content: ProjectSummaryView.init)
                         }
                         .padding([.horizontal, .top])
+                        .padding(.bottom, 3)
                         .fixedSize(horizontal: false, vertical: true)
                     }
                     VStack(alignment: .leading) {
@@ -51,6 +52,7 @@ struct HomeView: View {
                         ItemListView(title: "More to explore", items: viewModel.moreToExplore)
                     }
                     .padding(.horizontal)
+                    //.offset(y: -30)
                 }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
