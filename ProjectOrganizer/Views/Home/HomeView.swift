@@ -51,8 +51,11 @@ struct HomeView: View {
                         ItemListView(title: "Up next", items: viewModel.upNext)
                         ItemListView(title: "More to explore", items: viewModel.moreToExplore)
                     }
+                    .background(
+                        RoundedRectangle(cornerRadius: 20, style: .continuous)
+                            .foregroundColor(Color.secondarySystemGroupedBackground)
+                    )
                     .padding(.horizontal)
-                    //.offset(y: -30)
                 }
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())

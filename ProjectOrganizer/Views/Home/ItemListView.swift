@@ -20,12 +20,14 @@ struct ItemListView: View {
                 .font(.headline)
                 .foregroundColor(.secondary)
                 .padding(.top)
+                .padding(.horizontal)
             ForEach(items) { item in
                 NavigationLink(destination: EditItemView(item: item)) {
                     navigationLinkLabelView(item: item)
                 }
                 Divider()
             }
+            .padding(.horizontal)
         }
     }
     func navigationLinkLabelView(item: Item) -> some View {
@@ -54,7 +56,6 @@ struct ItemListView: View {
         //.padding(10)
         //.background(Color.secondarySystemGroupedBackground)
         .cornerRadius(10)
-        
     }
 }
 

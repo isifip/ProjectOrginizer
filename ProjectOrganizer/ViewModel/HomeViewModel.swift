@@ -53,7 +53,7 @@ extension HomeView {
                 NSSortDescriptor(keyPath: \Item.priority, ascending: false)
             ]
             
-            itemRequest.fetchLimit = 10
+            itemRequest.fetchLimit = 20
             itemsController = NSFetchedResultsController(
                 fetchRequest: itemRequest,
                 managedObjectContext: dataController.container.viewContext,
