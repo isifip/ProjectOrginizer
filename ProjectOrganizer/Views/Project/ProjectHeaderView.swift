@@ -13,9 +13,10 @@ struct ProjectHeaderView: View {
     
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
+        HStack(alignment: .bottom) {
+            VStack(alignment: .leading, spacing: 5) {
                 Text(project.projectTitle)
+                    .font(.headline)
                 ProgressView(value: project.completionAmount)
                     .tint(Color(project.projectColor))
             }
@@ -23,8 +24,8 @@ struct ProjectHeaderView: View {
             NavigationLink {
                 EditProjectView(project: project)
             } label: {
-                Image(systemName: "square.and.pencil")
-                    .imageScale(.large)
+                Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                    .imageScale(.medium)
             }
         }
         .padding(.bottom, 10)

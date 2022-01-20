@@ -41,7 +41,7 @@ struct ProjectsView: View {
                 }
             }
         }
-        //.listStyle(.plain)
+        //.listStyle(.insetGrouped)
     }
     //MARK: --> Toolbar Items
     var addProjectToolbarItem: some ToolbarContent {
