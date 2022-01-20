@@ -17,9 +17,12 @@ struct ItemRowView: View {
         NavigationLink(destination: EditItemView(item: item)) {
             Label {
                 Text(item.itemTitle)
+                    .strikethrough(item.completed ? true : false)
+                    .font(.subheadline)
             } icon: {
                 Image(systemName: viewModel.icon)
                     .foregroundColor(viewModel.color.map { Color($0) } ?? .clear)
+                    .font(.subheadline)
             }
             //ListViewComponents(item: item)
         }
